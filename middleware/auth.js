@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 
+// request to test the token and go to to the next request if the token is valid or return error if unauthorized
 module.exports = (req, res, next) => {
   try {
     const token = req.headers.authorization.split(' ')[1];
@@ -11,8 +12,8 @@ module.exports = (req, res, next) => {
       next();
     }
   } catch {
-    res.status(401).json({
-      error: new Error('Invalid request!')
+    res.status(403).json({
+      error: new Error('unauthorized request')
     });
   }
 };
