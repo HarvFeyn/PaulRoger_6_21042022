@@ -4,6 +4,7 @@ const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
 const path = require('path');
 
+// connection to the MongoDB atlas
 mongoose.connect('mongodb+srv://feynman:mdpproject6@cluster0.b7trr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
