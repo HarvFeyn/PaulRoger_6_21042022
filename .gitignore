@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # avoid to git images
-images/
+./images/*
