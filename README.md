@@ -1,9 +1,9 @@
-Project 6 "Construisez une API sécurisée pour une application d'avis gastronomiques"
+## Project 6 "Construisez une API sécurisée pour une application d'avis gastronomiques"
 
-Install :
+## Install :
 
 npm install
 
-Run the API :
+## Run the API :
 
 npm run start
